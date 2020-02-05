@@ -1,1 +1,17 @@
+Based on: https://help.testlio.com/en/articles/113252-what-does-a-good-bug-report-look-like
 
+App: Mcdonalds
+Environment: 
+Device and OS: Samsung Galaxy S8+ Android 9
+Testable App Version: 6.4
+Network: Wi-Fi/LTE 
+Location: Brooklyn, NY, USA
+Reproducability: 4/4
+Steps to reproduce + Expected Result + Actual Result: 
+Whenever I launch the app, I usually realize that I am signed out and sign back in or it usually occur when redeeming a coupon, I'd 
+be signed out of the account for no apparent reason and when I do attempt to sign in, I'd be stuck on the fries jumping animation 
+indicating that it is attempting to complete the task or load but it either throws me into a loop or the animation disappears and unable 
+to sign in until I've cleared the data through settings. Worst case scenario, usually this method wouldn't work and would force me to 
+reinstall the app.
+Possible fix: The connection between google account(s) and the Mcdonald's app must have not been executed well and needs to fixed on the 
+backend of the application.
