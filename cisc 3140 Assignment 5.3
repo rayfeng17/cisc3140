@@ -1,0 +1,45 @@
+Preview the first 12 lines of the movies.csv file and the last 4 lines of that same csv file.
+
+Script started on 2020-02-27 12:52:29-0500
+]0;rfeng@Ray: /mnt/c/Users/Ray[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray[00m$ cd downloads
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ awk 'NR == 1; NR > 1 {print $0 | "head -12"}' movies.csv
+movieId,title,genres
+
+1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
+
+2,Jumanji (1995),Adventure|Children|Fantasy
+
+3,Grumpier Old Men (1995),Comedy|Romance
+
+4,Waiting to Exhale (1995),Comedy|Drama|Romance
+
+5,Father of the Bride Part II (1995),Comedy
+
+6,Heat (1995),Action|Crime|Thriller
+
+7,Sabrina (1995),Comedy|Romance
+
+8,Tom and Huck (1995),Adventure|Children
+
+9,Sudden Death (1995),Action
+
+10,GoldenEye (1995),Action|Adventure|Thriller
+
+11,"American President, The (1995)",Comedy|Drama|Romance
+
+12,Dracula: Dead and Loving It (1995),Comedy|Horror
+
+awk: cmd. line:1: (FILENAME=movies.csv FNR=1493) fatal: print to "head -12" failed (Broken pipe)
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ tail -4 movies.csv
+193583,No Game No Life: Zero (2017),Animation|Comedy|Fantasy
+
+193585,Flint (2017),Drama
+
+193587,Bungo Stray Dogs: Dead Apple (2018),Action|Animation
+
+193609,Andrew Dice Clay: Dice Rules (1991),Comedy
+
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ exit
+exit
+
+Script done on 2020-02-27 12:54:09-0500
