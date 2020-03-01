@@ -1,0 +1,29 @@
+Download a zip file from MovieLens (https://grouplens.org/datasets/movielens/latest/) using the command line interface (CLI) such as curl or wget and unzip the .zip file. It would be okay to choose the smallest (recent data) dataset.
+
+Script started on 2020-02-27 13:12:03-0500
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ wget files.grouplens.org/datasets/movielens/ml-latest-small.zip
+--2020-02-27 13:12:16--  http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+Resolving files.grouplens.org (files.grouplens.org)... 128.101.65.152
+Connecting to files.grouplens.org (files.grouplens.org)|128.101.65.152|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 978202 (955K) [application/zip]
+Saving to: ‘ml-latest-small.zip’
+
+
+ml-latest-small.zip             0%[                                                  ]       0  --.-KB/s               
+ml-latest-small.zip           100%[=================================================>] 955.28K  5.26MB/s    in 0.2s    
+
+2020-02-27 13:12:16 (5.26 MB/s) - ‘ml-latest-small.zip’ saved [978202/978202]
+
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ unzip ml-latest-small.zip
+Archive:  ml-latest-small.zip
+   creating: ml-latest-small/
+  inflating: ml-latest-small/links.csv  
+  inflating: ml-latest-small/tags.csv  
+  inflating: ml-latest-small/ratings.csv  
+  inflating: ml-latest-small/README.txt  
+  inflating: ml-latest-small/movies.csv  
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ exit
+exit
+
+Script done on 2020-02-27 13:12:44-0500
