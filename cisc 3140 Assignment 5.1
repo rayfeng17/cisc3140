@@ -1,0 +1,122 @@
+Filter 1 column from a CSV file. Extract out the artist names from the CSV file that can be downloaded from the Spotify Charts website (https://spotifycharts.com/regional). Ensure that the artist names are unique and sorted. Retain the header as the top of the file.
+
+Script started on 2020-02-26 22:28:45-0500
+]0;rfeng@Ray: /mnt/c/Users/Ray[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray[00m$ cd downloads
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ cut -d ',' -f 3 spotify.csv > spotify1.csv
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ awk '{gsub(/\"/,"")};1' spotify1.csv > output.csv
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ awk 'NR==1; NR > 1 {print $0 | "sort -uk 1,1"}' output.csv 
+Artist
+ DaBaby & Lil Baby) - Remix
+ Gunna and London On Da Track)
+ Pt. II
+ next
+000 Hours (with Justin Bieber)
+24kGoldn
+5 Seconds of Summer
+Alec Benjamin
+Ali Gatie
+Anuel AA
+Ariana Grande
+Arizona Zervas
+Ashe
+Ava Max
+BROCKHAMPTON
+BTS
+Bad Bunny
+Bazzi
+Billie Eilish
+Black Eyed Peas
+Camila Cabello
+Camilo
+Chris Brown
+Conan Gray
+DaBaby
+Daddy Yankee
+Dalex
+Dean Lewis
+Dimelo Flow
+Doja Cat
+Don Toliver
+Drake
+Dua Lipa
+Ed Sheeran
+Ellie Goulding
+Eminem
+Future
+G-Eazy
+Gusttavo Lima
+Halsey
+Harry Styles
+Henrique & Juliano
+Imagine Dragons
+J Balvin
+JACKBOYS
+JP Saxe
+Jack Harlow
+James Arthur
+Jhay Cortez
+John Legend
+Joji
+Jonas Brothers
+Juice WRLD
+Justin Bieber
+K CAMP
+KAROL G
+Khalid
+Kina
+Kygo
+Lady Gaga
+Lauv
+Lewis Capaldi
+Lil Mosey
+Lizzo
+Lunay
+MC Lan
+MEDUZA
+Major Lazer
+Maroon 5
+Marshmello
+Mustard
+Myke Towers
+Niall Horan
+Nicky Jam
+Noah Cyrus
+Olivia Rodrigo
+Panic! At The Disco
+Pedro Sampaio
+Pop Smoke
+Post Malone
+Powfu
+Queen
+Rauw Alejandro
+Regard
+Rich Music LTD
+Roddy Ricch
+SAINt JHN
+SHAED
+Sam Smith
+Sech
+Selena Gomez
+Shakira
+Shawn Mendes
+Stormzy
+Surfaces
+TOKYO’S REVENGE
+Tainy
+Tame Impala
+Taylor Swift
+The Weeknd
+Thiaguinho MT
+Tones and I
+Travis Scott
+Trevor Daniel
+Tyga
+XXXTENTACION
+Y2K
+YNW Melly
+benny blanco
+blackbear
+]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ exit
+exit
+
+Script done on 2020-02-26 22:33:28-0500
