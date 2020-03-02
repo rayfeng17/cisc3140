@@ -3,8 +3,11 @@ Filter 1 column from a CSV file. Extract out the artist names from the CSV file 
 
 Script started on 2020-02-26 22:28:45-0500
 ]0;rfeng@Ray: /mnt/c/Users/Ray[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray[00m$ cd downloads
+// cuts a line to get all fields from nth field to the last field and moves the output to another .txt file
 ]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ cut -d ',' -f 3 spotify.csv > spotify1.csv
+// substitutes the variables, removes expressions
 ]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ awk '{gsub(/\"/,"")};1' spotify1.csv > output.csv
+// sorts all of the field except the first row, retaining the header
 ]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ awk 'NR==1; NR > 1 {print $0 | "sort -uk 1,1"}' output.csv 
 Artist
  DaBaby & Lil Baby) - Remix
