@@ -2,6 +2,7 @@ Preview the first 12 lines of the movies.csv file and the last 4 lines of that s
 
 Script started on 2020-02-27 12:52:29-0500
 ]0;rfeng@Ray: /mnt/c/Users/Ray[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray[00m$ cd downloads
+//previewing the first 12 lines while also retaining the header 'movieid,title,genre'
 ]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ awk 'NR == 1; NR > 1 {print $0 | "head -12"}' movies.csv
 movieId,title,genres
 
@@ -30,6 +31,7 @@ movieId,title,genres
 12,Dracula: Dead and Loving It (1995),Comedy|Horror
 
 awk: cmd. line:1: (FILENAME=movies.csv FNR=1493) fatal: print to "head -12" failed (Broken pipe)
+//previews the last 4 lines of the csv
 ]0;rfeng@Ray: /mnt/c/Users/Ray/downloads[01;32mrfeng@Ray[00m:[01;34m/mnt/c/Users/Ray/downloads[00m$ tail -4 movies.csv
 193583,No Game No Life: Zero (2017),Animation|Comedy|Fantasy
 
