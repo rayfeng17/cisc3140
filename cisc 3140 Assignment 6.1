@@ -1,0 +1,16 @@
+(define isPalindrome?
+(lambda (input-str)
+  (letrec ((analyzer
+             (lambda (init end)
+               (let ((first-letter (string-ref input-str init))
+                      (last-letter (string-ref input-str end)))
+                 (cond
+                  ((<= end init) #t)
+                  ((not (char-alphabetic? first-letter))
+                   (analyzer (+ init 1) end))
+                  ((not (char-alphabetic? last-letter))
+                   (analyzer init (- end 1)))
+                  ((char-ci=? first-letter last-letter)
+                   (analyzer (+ init 1) (- end 1)))
+                  (else #f))))))
+    (analyzer 0 (- (string-length input-str) 1))))) 
