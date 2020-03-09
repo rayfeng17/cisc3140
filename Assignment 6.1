@@ -7,6 +7,7 @@ function.
              (lambda (init end)
                (let ((first-letter (string-ref input-str init))
                       (last-letter (string-ref input-str end)))
+                      ;; reverser function
                  (cond
                   ((<= end init) #t)
                   ((not (char-alphabetic? first-letter))
