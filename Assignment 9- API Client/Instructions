@@ -3,4 +3,4 @@ To run the app locally on your machine, the URL used to preview the response fro
 
 This GET response is to pull retrieve information of a track from artists. 
 
-The references to the parameters for artist tracks is [here]: https://developer.spotify.com/documentation/web-api/reference/tracks/get-track/
+The references to the parameters for artist tracks is https://developer.spotify.com/documentation/web-api/reference/tracks/get-track/
