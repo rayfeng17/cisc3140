@@ -2,7 +2,8 @@ GET https://api.spotify.com/v1/tracks/{id}
 
 // "Authorization: Bearer {your access token}" is unique and expires, would need to request.
 
-CMD command: curl -X "GET" "https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl?market=CA" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer {your access token}"
+CMD command: curl -X "GET" "https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl?market=CA" -H 
+"Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer {your access token}"
 
 Output: 
 
@@ -93,4 +94,8 @@ Output:
 }
 
 Parsed data: 
-The output has a Key:Value data type 
+Based on simple REST principles, the Spotify Web API endpoints return JSON metadata about music artists, albums, and tracks, directly 
+from the Spotify Data Catalogue.
+
+The data is outputed as Key:Value where the keys are as shown album type, external urls, ID, artist name, type, uri, images, song name, 
+release date, and etc. 
