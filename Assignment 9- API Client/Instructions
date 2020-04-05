@@ -1,8 +1,9 @@
 For this exmaple, Spotify is used to for this demonstration.
 To run the app locally on your machine, the URL used to preview the response from a HTTP GET request is https://developer.spotify.com/console/get-track/?id=3n3Ppam7vgaVa1iaRUc9Lp
 
-This GET response is to pull retrieve information of a track from artists. 
+This GET response is to retrieve information of a track from artists based on the parameters. 
 
+An explanation to Web API: https://developer.spotify.com/documentation/web-api/
 The references to the parameters is https://developer.spotify.com/documentation/web-api/reference/tracks/get-track/
 
 An OAuth Token is required and would expire, so simply request the token and read the prompt.
