@@ -93,9 +93,19 @@ Output:
   "uri": "spotify:track:2QCdL2VAAZEaXHsS3zfObW"
 }
 
-Parsed data: 
+*Parsed data 
 Based on simple REST principles, the Spotify Web API endpoints return JSON metadata about music artists, albums, and tracks, directly 
 from the Spotify Data Catalogue.
 
-The data is outputed as Key:Value where the keys are as shown album type, external urls, ID, artist name, type, uri, images, song name, 
-release date, and etc. 
+The data is outputed as Key:Value where the keys are as shown album type, external urls, Spotify ID, artist name, type, uri, images, 
+song name, release date, duration, and whether it is explicit or not. 
+
+*Specific values to display as html web page
+1. https://open.spotify.com/artist/6sFIWsNpZYqfjUpaCgueju
+-This link would direct the user to Carly Rae Jepsen's Spotify albums, overview, related artists, and biography.
+2. spotify:artist:6sFIWsNpZYqfjUpaCgueju
+- This would direct you to the Spotify application on the your personal computer.
+3. https://open.spotify.com/album/0tGPJ0bkWOUmH7MEOR77qc\
+- This would direct you to Carly Rae Jepsen's song "Cut To The Feeling" on Spotify.
+4. https://i.scdn.co/image/ab67616d0000b2737359994525d219f64872d3b1
+- This would direct you to the album cover varying by the height and width in the code. 
