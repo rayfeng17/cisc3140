@@ -18,7 +18,7 @@ category_list = json.loads(response.text)
 print(" Available Cocktail Category : ")
 i = 0
 for item in (category_list["drinks"]):
-    print("   " + str(i) + " " + item['strCategory'])
+    print("  " + str(i) + " " + item['strCategory'])
     i = i + 1
 
 ip_category = input("Enter Category # : ")
