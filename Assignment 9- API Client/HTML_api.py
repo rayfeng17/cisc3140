@@ -20,8 +20,8 @@ f.write("<HTML><body> <h2> Following are the Drinks for the selected Category " 
 print
 
 for drink in drinks_list["drinks"]:
-    f.write("<tr><td><img src='" + drink['strDrinkThumb'] + "' alt='" + drink['strDrink'] + "' height='60' "
-    "width='60'></td><td><h3>" + drink['strDrink'] + "</h3></td></tr>")
+    f.write("<tr><td><img src='" + drink['strDrinkThumb'] + "' alt='" + drink['strDrink'] + "' height='80' "
+    "width='80'></td><td><h3>" + drink['strDrink'] + "</h3></td></tr>")
 
 f.write("</table></body></html>")
 f.close()
