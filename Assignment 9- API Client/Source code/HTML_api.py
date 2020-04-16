@@ -7,7 +7,8 @@ querystring = {"c": "list"}
 
 headers = {
     'x-rapidapi-host': "the-cocktail-db.p.rapidapi.com",
-    'x-rapidapi-key': "5dc11f6bd4msh47eeca06b2dae52p1b3ef2jsn7da9857fe2f5"
+    'x-rapidapi-key': "Your API key"
+    # "5dc11f6bd4msh47eeca06b2dae52p1b3ef2jsn7da9857fe2f5"
 }
 
 response = requests.request("GET", url, headers=headers, params=querystring)
