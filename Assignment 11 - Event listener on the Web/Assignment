@@ -1,0 +1,6 @@
+Description: Practice working with event listeners, since this is a common web feature. Pick one of the following ideas or come up 
+with your own project idea. Submit source code along with some sort of easily found description (i.e. readme file) that describes your
+project.
+
+Suggestion: Build a pong game clone and/or credit card number verification. Both of these ideas have event listeners that react to 
+real-time user input. Implementation details are up to you.
