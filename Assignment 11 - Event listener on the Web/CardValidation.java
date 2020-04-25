@@ -18,7 +18,7 @@ public class CardValidation {
         // set up components
         frame = new JFrame("Card Number Verification");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(new Dimension(350, 100));
+        frame.setSize(new Dimension(350, 150));
         numberField = new JTextField(16);
         validLabel = new JLabel("not yet verified");
         verifyButton = new JButton("Validate");
