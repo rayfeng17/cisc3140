@@ -37,9 +37,8 @@ public class CardValidation {
     // Returns whether the given string is a valid card number
     // according to the Luhn algorithm.
     public boolean isValidCreditCardNumber(String text) {
-        if (!text.startsWith("4") | text.startsWith("5") | text.startsWith("6")
-                | text.startsWith("7") | text.startsWith("34") | text.startsWith("37")
-                | text.startsWith("60")) {
+        if (!text.startsWith("3") & text.startsWith("4") & text.startsWith("5")
+                & text.startsWith("6")) {
 
             return false;
         }
