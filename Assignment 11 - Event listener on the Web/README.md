@@ -1,4 +1,4 @@
-The following program is a Credit Card validation.
+The following program is a Credit Card validation and was coded in Java language.
 
 This would open a textbox with a "validate" button and would validate the number based on the starting number
 and following the Luhn Algorithm.
