@@ -35,7 +35,8 @@ public class CardValidation {
     }
 
     // Returns whether the given string is a valid card number
-    // according to the Luhn algorithm.
+    // based on the Luhn algorithm.
+    // Validates Visa, Mastercard, Discover, and American express cards
     public boolean isValidCreditCardNumber(String text) {
         if (!text.startsWith("3") & text.startsWith("4") & text.startsWith("5")
                 & text.startsWith("6")) {
