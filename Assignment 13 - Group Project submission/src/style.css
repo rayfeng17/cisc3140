@@ -43,7 +43,7 @@ text-align: left;
 
 button
 {
-color: ;
+background-color: #FF9900;
 width: 100%;
 padding: 10px;
 border-radius: 20px;
@@ -54,10 +54,7 @@ outline: none;
 cursor: pointer;
 }
 
-.signup-btn
-{
-background-color: #FF9900;
-}
+
 
 .signin-btn
 {
